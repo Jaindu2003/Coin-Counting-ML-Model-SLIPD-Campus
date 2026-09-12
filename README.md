@@ -10,7 +10,8 @@ Computer Vision Libraries: Frameworks like OpenCV (cv2) or Scikit-Image are typi
 
 Visualization Tools: The 1000x800 figure generated in my notebook is created using Matplotlib, which plots the processed image arrays back into a visual format humans can easily view.
 
-🧠 About the Algorithm Used
+🧠 About the Algorithm Used;
+
 Canny Edge Detection: The algorithm sweeps across the image matrix looking for high-contrast borders, turning a standard photo into a black-and-white outline.
 
 ⭕ Contour Finding: Once edges are drawn, a contour algorithm traces closed loops. If a loop is roughly circular and meets a certain size threshold, the algorithm flags it as a "coin."
