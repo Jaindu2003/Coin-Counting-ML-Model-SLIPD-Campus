@@ -25,6 +25,12 @@ Bounding-Box Regression: To extract the coin, the algorithm must predict four co
 
 <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/80c77c60-4d79-4d2e-a738-031e21e088f2" />
 
+The Axes (The Variables)Bottom Axis (X-Axis): This represents the actual, physical diameter of the coins in millimeters. This is known as the Independent Variable because it is a set physical fact that doesn't change.Left Axis (Y-Axis): This represents how many pixels wide the coin appears on the screen. This is the Dependent Variable because the number of pixels depends on how big the actual coin is.
+   
+The Dots : (The Data)Each dot represents a single detected object in the image.The gold dots highlight the "5 distinct coins" mentioned in your project.Notice how the dots don't form a perfectly straight line? In the real world, lighting, shadows, and the camera angle cause slight variations in how many pixels an object takes up
+
+The Red Line (The Regression) : This is the Line of Best Fit. The regression algorithm looked at all the scattered dots and used math to draw a straight line straight through the middle of them, keeping the distance from the line to every single dot as small as possible.Why is this useful? Because of this red line, the computer can now predict things it hasn't seen yet. If you slide a brand-new coin under the camera that measures exactly 23 mm wide, the computer can follow the red line and instantly predict that it will take up roughly 360 pixels on the screen, allowing it to accurately draw a bounding box around it.
+
 Datasets :
 
 This is not a complex ML Model 
