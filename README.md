@@ -1,7 +1,7 @@
 # Coin-Counting-ML-Model-SLIPD-Campus
 This is a trained Machine learning model 
 
-Technologies and Data used:
+<u> Technologies and Data used: </u>
 
 When extracting objects like coins from an image, the workflow relies on specific data structures and libraries commonly used in Python development environments.
 
