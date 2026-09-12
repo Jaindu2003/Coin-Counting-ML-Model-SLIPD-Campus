@@ -17,13 +17,29 @@ Canny Edge Detection: The algorithm sweeps across the image matrix looking for h
 
 Contour Finding: Once edges are drawn, a contour algorithm traces closed loops. If a loop is roughly circular and meets a certain size threshold, the algorithm flags it as a "coin."
 
-Regression : linear
+Regression : 
 
 When extracting the coins, Regression is the mathematical engine used to predict exact numerical values, specifically for location and confidence.
 
 Bounding-Box Regression: To extract the coin, the algorithm must predict four continuous numbers: the X and Y coordinates of the coin's center, and the Width and Height of the box enclosing it. The regression model calculates the difference between its guessed coordinates and the real coordinates, constantly adjusting its math until the box fits perfectly.
 
 <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/80c77c60-4d79-4d2e-a738-031e21e088f2" />
+
+Datasets :
+
+This is not a complex ML Model 
+
+1. The Original Photo (coins.jpg)
+This is exactly what it sounds like: the starting picture file of the coins. It is the raw image you feed into the program.
+
+2. The Computer's Version (image)
+Computers cannot "see" photos like humans do; they only read numbers. This step translates the original photo into a giant grid of numbers (representing colors and pixels) so the code can read and edit it.
+
+3. The Outlines (unique_boxes)
+Imagine drawing a tight, invisible square around every single coin in the photo. This is just a list of measurements (where the box starts, how wide it is, and how tall it is) so the computer knows exactly where each coin is located.
+
+4. The Cut-Out Coins (extracted_coins)
+This is your final result. The program uses the outlines from the previous step like a cookie cutter. It chops up the main photo into smaller pieces, giving you a separate, individual picture of every single coin.
 
 
 Logistic Regression (Confidence Scoring): The system uses a regression curve to predict a value between 0.0 and 1.0 representing how confident it is that the object inside the box is actually a coin (e.g., a score of 0.95 means 95% confident).
