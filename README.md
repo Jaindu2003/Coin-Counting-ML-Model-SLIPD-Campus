@@ -45,7 +45,7 @@ Computers cannot "see" photos like humans do; they only read numbers. This step 
 Imagine drawing a tight, invisible square around every single coin in the photo. This is just a list of measurements (where the box starts, how wide it is, and how tall it is) so the computer knows exactly where each coin is located.
 
 4. The Cut-Out Coins (extracted_coins)
-This is your final result. The program uses the outlines from the previous step like a cookie cutter. It chops up the main photo into smaller pieces, giving you a separate, individual picture of every single coin.
+This is the final result. The program uses the outlines from the previous step like a cookie cutter. It chops up the main photo into smaller pieces, giving you a separate, individual picture of every single coin.
 
 
 Logistic Regression (Confidence Scoring): The system uses a regression curve to predict a value between 0.0 and 1.0 representing how confident it is that the object inside the box is actually a coin (e.g., a score of 0.95 means 95% confident).
